@@ -1,67 +1,64 @@
-# Phase 1 Project Template - Minimum Viable Product (MVP)
+# A Movie Production Analysis for Microsoft
 
-![blueprint](images/blueprint.png)
-
-This repository is like a blueprint, providing structure for your first End of Phase Project. We suggest you base your Phase 1 project off of this repository so you can focus less on formatting and organization, and more on the _analysis and communication skills_ that will support your progress through the course. This template is designed to make your project portfolio-ready in order to impress the future employers who will review it. 
-
-## Repository Contents
-
-Below is a list of the contents of this repository - instructions for using them are in the next section.
-
-- `README.md`: The README for this repo explaining its contents - you're reading it now.
-- `TEMPLATE_README.md`: An example of a project README that provides a brief overview of your whole project.
-- `dsc-phase1-project-template.ipynb`: A starter Jupyter Notebook with headings, code examples and guiding questions.
-- `create_sql_database.ipynb`: A notebook for creating an SQL database if you would prefer to use SQL for this project.
-- `DS_Project_Presentation_Template.pdf`: A starter slide deck presenting your project - here is an [editable version](https://docs.google.com/presentation/d/1PaiH1bleXnhiPjTPsAXQSiAK0nkaRlseQIr_Yb-0mz0/copy).
-- `data` folder: A folder for the data you reference with your code.
-- `src` folder: A folder containing custom functions.
-- `images` folder: A folder for the images you reference in your files .
-- `.gitignore`: A hidden file that tells git to not track certain files and folders.
-
-## Instructions For Using This Repository
-
-### Fork This Repository
-
-1. Fork this repository to your personal account
-   - In GitHub, go to this repository and click the "Fork" button in the upper right.
-   
-2. Change the name of your fork of this repo to a _descriptive_ name of your choosing
-   - In GitHub, go to your fork of this repo -> "Settings" -> "Options" -> "Repository Name" -> "Rename"
-   - Make the name descriptive, since potential employers will read it. Ex: "Microsoft-Movie-Analysis" is better than "Project-1"
-
-3. Use `git clone` to clone your fork of this repo to your local computer
-
-### Work In Your Fork Of This Repository
-
-- Work in the repo clone that you created on your local machine
-- Start writing and coding in the Jupyter Notebook `dsc-phase1-project-template.ipynb`
-- Fill in the README template in `TEMPLATE_README.md`
-- Use `git add`, `git commit`, and `git push` often to update your repo in GitHub
-   - For a refresher on how to do this and why it's important, review Topic 2: Bash and Git
-
-### Use The Slide Template
-
-1. Go to [this link](https://docs.google.com/presentation/d/1PaiH1bleXnhiPjTPsAXQSiAK0nkaRlseQIr_Yb-0mz0/copy) to make an editable copy of the slide deck in your own Google Drive account
-2. Go to "Slide," select "Change Theme," and pick a theme you like so your presentation doesn't look like everyone else's
-
-### Tidy Up Your Project
-
-- Change the file name of the Jupyter Notebook (`dsc-phase1-project-template.ipynb`) to something more descriptive
-- Save an appropriately-named PDF version of your slide deck to the repository
-- Rename the template readme you've been working in by running `git mv TEMPLATE_README.md README.md`
-- Delete unnecessary files from the repo using `git rm`
-   - The presentation PDF: `DS_Project_Presentation_Template.pdf`
-   - This README file: `README.md`
-   - Any unused data files in the `data` folder
-   - Any unused images in the `images` folder
-
-### Submit Your Project
-
-To submit your project, please follow the instructions in the [Project Submission & Review](https://learning.flatironschool.com/courses/1384/pages/project-submission-and-review-online?module_item_id=91641) page on Canvas.
+**Authors**: Sameeha Ramadhan
 
 
-### Notes
+## Overview
 
-- The visualizations in the notebook use best practices for visualization that you should try to emulate. For example, they have clear axes, descriptive titles, and appropriate number formatting.
-- The `dsc-phase1-project-template.ipynb` is intended to be the _final version_ of your project. The first notebook you create will not look like this. You are encouraged to start with a very disorderly notebook and clean it as you go.
-- If you would like to use SQL for this project, please open the `create_sql_database.ipynb` notebook, and run the cells. The schema for the database is stored in the images/ folder.
+This analysis attempts to satisfy the informational needs of Microsoft (MSFT) by investigating the film industry to determine which types of films their new studio should produce. We will look at a number of factors to better understand what contributes to the success of a movie, and in turn offer a few recommendations on the best strategies to get started. Microsoft can use this analysis to adjust planning, production, and marketing to hit the ground running as they enter this highly competitve space.
+
+## Business Problem
+
+Microsoft may be able to enter the movie making sector while successfully standing out from fierce competition by choosing to create films that their target audiences have shown to thoroughly enjoy. Doing so will allow them to produce movies that will instantly become hits, which will in turn allow them to improve on and produce even more content, setting them up to be a studio force to be reckoned with. Using data from well-known industry sources such as Imdb, I analyze and explain patterns in popular movie types based on ratings and reviews, as well as budgeting decisions to help predict what audiences want from a film and thus, guaranteeing its success.
+
+## Data
+
+Rotten Tomatoes is a well-known review-aggregation website for television and film and is widely viewed as the 'go-to' in deciding whether or not a production is worth watching. IMDB.com is a database that is considered to be the most authoritative source for all film and television related material. The data from both websites provides information such as, but not limited to, budgets, reviews and ratings.
+
+
+## Methods
+
+This project uses descriptive analysis, including description of movie trends based on the months in a year. This provides a useful overview of the movie industries' profits and profit margins based on release timings.
+
+
+## Results
+
+The top 3 most profitable movie genres are Romance, Cult Movies, and Animation, with Romance offering an average of .8 net profit.
+
+### Visual 1
+![graph1](./images/genreprofit.png)
+
+The best times to release a movie is during the early summer months (June and July), with July taking the number one spot in profit margins, followed by the holiday season, specifically November and December.
+
+### Visual 2
+![graph2](./images/profitmarginsbymonth.png)
+
+
+## Conclusions
+
+This analysis offers three conclusions to contribute to Microsoft's success as it enters the movie making industry:
+
+1- **Microsoft should aim to budget around $96,194,000 to produce a film.** that should result in a profit margin of around **80\%**.
+
+2- **The new studio should aim to release their movies between June and July, as well as over the winter holiday break.** Given that most children and their parents have breaks from school and work during these times, productions see a general increase in profitability.
+
+3- **Microsoft should focus their efforts on the top 6 most profitable movie genres: Romance, Cult, Animation, Western, Kids & Family, and Sci-Fi.** Given the fact that a number of these genres, such as Animation and Kids & Family, aren't produced as frequently as others but nonetheless have impressive profit margins,  I'd recommend that Microsoft particularly consider these genres to potentially increase their profits greatly without much competiton when entering the movie making industry.
+
+
+## For More Information
+
+Please review our full analysis in [our Jupyter Notebook](./Microsoft-Movie-Analysis.ipynb) or our [presentation](./Microsoft-Movie-Analysis.pdf).
+
+For any additional questions, please contact **Sameeha Ramadhan at shramadhan@gmail.com**
+
+## Repository Structure
+
+Describe the structure of your repository and its contents, for example:
+
+```
+├── README.md                           <- The top-level README for reviewers of this project
+├── Microsoft-Movie-Analysis.ipynb      <- Narrative documentation of analysis in Jupyter notebook
+├── Microsoft-Movie-Presentation.pdf    <- PDF version of project presentation
+├── data                                <- Both sourced externally and generated from code
+└── images                              <- Both sourced externally and generated from code
+```
